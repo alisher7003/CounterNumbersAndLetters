@@ -11,19 +11,19 @@ namespace CalculatorNumberAndLetter
 
         private static void Presentation()
         {
-            Console.WriteLine("Dasturga hush kelibsiz");
-            string selection;
-            do
-            {
-                Console.Write("matn kiriting: ");
-                string text = Console.ReadLine();
-                Console.ForegroundColor = ConsoleColor.Red;
-                Services.Counter(text);
-                Console.ForegroundColor = ConsoleColor.White;
+            Print("Dasturga xush kelibsiz");
+            Console.Write("matn kiriting: ");
+            string text = Console.ReadLine();
 
-                Console.Write("Davom etishni xohlasangiz (xa)ni bosing: ");
-                selection = Console.ReadLine().ToLower();
-            } while (selection == "xa");
+            Print("Hisoblash jarayonida...");
+            Print($"Matndagi raqamlar soni: {Services.GetDigitsCounter(text)} ta");
+            Print($"Matndagi harflar soni:  {Services.GetLettersCounter(text)} ta");
+            Print($"Boshqa belgilar soni:   {Services.GetOtherCharactersCounter(text)} ta");
+        }
+
+        static void Print(string text)
+        {
+            Console.WriteLine(text);
         }
     }
 }

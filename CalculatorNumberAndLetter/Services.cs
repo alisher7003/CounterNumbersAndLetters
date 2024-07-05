@@ -4,31 +4,43 @@ namespace CalculatorNumberAndLetter
 {
     internal class Services
     {
-        public static void Counter(string str)
+        public static int GetDigitsCounter(string str)
         {
-            int numberOfDigits = 0;
-            int numberOfLetters = 0;
-            int numberOfCharacters = 0;
-
+            int count = 0;
             foreach (char c in str)
             {
                 if (char.IsDigit(c))
                 {
-                    numberOfDigits++;
-                }
-                else if (char.IsLetter(c))
-                {
-                    numberOfLetters++;
-                }
-                else if (!char.IsLetterOrDigit(c))
-                {
-                    numberOfCharacters++;
+                    count++;
                 }
             }
-            Console.WriteLine($"\nCalculating!!!");
-            Console.WriteLine($"Matndagi raqamlar soni: {numberOfDigits}");
-            Console.WriteLine($"Matndagi harflar soni:  {numberOfLetters}");
-            Console.WriteLine($"Boshqa belgilar soni:   {numberOfCharacters}\n");
+            return count;
+        }
+
+        public static int GetLettersCounter(string str)
+        {
+            int count = 0;
+            foreach (char c in str)
+            {
+                if (char.IsLetter(c))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int GetOtherCharactersCounter(string str)
+        {
+            int count = 0;
+            foreach (char c in str)
+            {
+                if (!char.IsLetterOrDigit(c))
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
