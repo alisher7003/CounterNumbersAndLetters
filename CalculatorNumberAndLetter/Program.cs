@@ -18,7 +18,7 @@ namespace CalculatorNumberAndLetter
                 Console.Write("matn kiriting: ");
                 string text = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Services.DigitsOnly(text);
+                Services.Counter(text);
                 Console.ForegroundColor = ConsoleColor.White;
 
                 Console.Write("Davom etishni xohlasangiz (xa)ni bosing: ");

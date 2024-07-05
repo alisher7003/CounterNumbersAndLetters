@@ -4,7 +4,7 @@ namespace CalculatorNumberAndLetter
 {
     internal class Services
     {
-        public static void DigitsOnly(string str)
+        public static void Counter(string str)
         {
             int numberOfDigits = 0;
             int numberOfLetters = 0;
