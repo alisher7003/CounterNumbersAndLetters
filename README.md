@@ -1,6 +1,6 @@
 # CalculatorNumberAndLetter
 
-This app for calculating _number of digits_, _number of letters_ and _number of other characters_ in entered text.
+this program will determine how many numbers and letters are present in the text entered by the user
 
 I have used some methods and foreach loop.
 
@@ -46,8 +46,8 @@ I have used __char.IsDigit()__, __char.IsLetter()__ and __char.IsLetterOrDigit()
 - __IsLetterOrDigit__
   - It is for calculating all characters without digits and letters.
  
-`Result`
+`Result to GIF:`
 
-![](https://github.com/Javohir0102/CalculatorNumberAndLetter/blob/master/CalculatorNumberAndLetter/Asset/Result.gif)
+![](https://github.com/Javohir0102/CalculatorNumberAndLetter/blob/master/CalculatorNumberAndLetter/Images/Result.gif)
 
 You are now version 1.
